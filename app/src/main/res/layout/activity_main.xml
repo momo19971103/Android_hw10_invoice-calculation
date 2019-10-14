@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/M1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 1,2月發票"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/M3_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 3,4月發票"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/M5_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 5,6月發票"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/M7_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 7,8月發票"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/M9_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 9,10月發票"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/M11_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018 11,12月發票"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

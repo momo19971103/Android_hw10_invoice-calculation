@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">hw10</string>
+    <string name="N_1_1_2">21735266</string>
+    <string name="N_2_1_2">91874254</string>
+    <string name="N_3_1_2">56065209</string>
+    <string name="N_4_1_2">05739340</string>
+    <string name="N_5_1_2">69001612</string>
+
+    <string name="N_1_3_4">12342126</string>
+    <string name="N_2_3_4">80740977</string>
+    <string name="N_3_3_4">36822639</string>
+    <string name="N_4_3_4">38786238</string>
+    <string name="N_5_3_4">87204837</string>
+
+    <string name="N_1_5_6">20048019</string>
+    <string name="N_2_5_6">02142605</string>
+    <string name="N_3_5_6">21240109 </string>
+    <string name="N_4_5_6">78323535</string>
+    <string name="N_5_5_6">18549847</string>
+
+    <string name="N_1_7_8">73372972</string>
+    <string name="N_2_7_8">22315462</string>
+    <string name="N_3_7_8">91903003</string>
+    <string name="N_4_7_8">16228722</string>
+    <string name="N_5_7_8">03270598</string>
+
+    <string name="N_1_9_10">96363025</string>
+    <string name="N_2_9_10">69095110</string>
+    <string name="N_3_9_10">96745865</string>
+    <string name="N_4_9_10">98829035</string>
+    <string name="N_5_9_10">45984442</string>
+
+    <string name="N_1_11_12">88515559</string>
+    <string name="N_2_11_12">47551146</string>
+    <string name="N_3_11_12">83513656</string>
+    <string name="N_4_11_12">85250862</string>
+    <string name="N_5_11_12">61472404</string>
+</resources>
