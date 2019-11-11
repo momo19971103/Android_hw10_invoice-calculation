@@ -33,30 +33,30 @@ public class Main3Activity extends AppCompatActivity {
             else if(enter.matches(N2)){
                 AnsText.setText("恭喜獎金200萬元");
             }
-            else if(enter.substring(i,7).matches(N3.substring(i,7))
-                    ||enter.substring(i,7).matches(N4.substring(i,7))
-                    ||enter.substring(i,7).matches(N5.substring(i,7))){
-                switch (i){
-                    case 0:
-                        AnsText.setText("恭喜獎金20萬元");
-                        break;
-                    case 1:
-                        AnsText.setText("恭喜獎金4萬元");
-                        break;
-                    case 2:
-                        AnsText.setText("恭喜獎金1萬元");
-                        break;
-                    case 3:
-                        AnsText.setText("恭喜獎金4千元");
-                        break;
-                    case 4:
-                        AnsText.setText("恭喜獎金1千元");
-                        break;
-                    case 5:
-                        AnsText.setText("恭喜獎金2百元");
-                        break;
-                }
-                break;
+            else if(enter.substring(i,8).matches(N3.substring(i,8))
+                        ||enter.substring(i,8).matches(N4.substring(i,8))
+                        ||enter.substring(i,8).matches(N5.substring(i,8))){
+                    switch (i){
+                        case 0:
+                            AnsText.setText("恭喜獎金20萬元");
+                            break;
+                        case 1:
+                            AnsText.setText("恭喜獎金4萬元");
+                            break;
+                        case 2:
+                            AnsText.setText("恭喜獎金1萬元");
+                            break;
+                        case 3:
+                            AnsText.setText("恭喜獎金4千元");
+                            break;
+                        case 4:
+                            AnsText.setText("恭喜獎金1千元");
+                            break;
+                        case 5:
+                            AnsText.setText("恭喜獎金2百元");
+                            break;
+                    }
+                    break;
             }
             else {
                 AnsText.setText("QAQ 沒有中獎 ");

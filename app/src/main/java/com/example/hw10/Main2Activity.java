@@ -17,7 +17,8 @@ public class Main2Activity extends AppCompatActivity {
     private TextView T4;
     private TextView T5;
     private EditText editText;
-    String N1,N2,N3,N4,N5 ;
+    String N1, N2, N3, N4, N5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,17 +30,17 @@ public class Main2Activity extends AppCompatActivity {
         N3 = "0";
         N4 = "0";
         N5 = "0";
-        T1 = (TextView)findViewById(R.id.N_1);
-        T2 = (TextView)findViewById(R.id.N_2);
-        T3 = (TextView)findViewById(R.id.N_3);
-        T4 = (TextView)findViewById(R.id.N_4);
-        T5 = (TextView)findViewById(R.id.N_5);
+        T1 = (TextView) findViewById(R.id.N_1);
+        T2 = (TextView) findViewById(R.id.N_2);
+        T3 = (TextView) findViewById(R.id.N_3);
+        T4 = (TextView) findViewById(R.id.N_4);
+        T5 = (TextView) findViewById(R.id.N_5);
         editText = findViewById(R.id.editText);
 
-        Intent intent=getIntent();
-        final int month = intent.getIntExtra("Month",0);
+        Intent intent = getIntent();
+        final int month = intent.getIntExtra("Month", 0);
 
-        switch (month){
+        switch (month) {
             case 1:
                 N1 = getString(R.string.N_1_1_2);
                 N2 = getString(R.string.N_2_1_2);
@@ -62,11 +63,11 @@ public class Main2Activity extends AppCompatActivity {
                 N5 = getString(R.string.N_5_5_6);
                 break;
             case 7:
-               N1 = getString(R.string.N_1_7_8);
-               N2 = getString(R.string.N_2_7_8);
-               N3 = getString(R.string.N_3_7_8);
-               N4 = getString(R.string.N_4_7_8);
-               N5 = getString(R.string.N_5_7_8);
+                N1 = getString(R.string.N_1_7_8);
+                N2 = getString(R.string.N_2_7_8);
+                N3 = getString(R.string.N_3_7_8);
+                N4 = getString(R.string.N_4_7_8);
+                N5 = getString(R.string.N_5_7_8);
                 break;
             case 9:
                 N1 = getString(R.string.N_1_9_10);
@@ -101,25 +102,22 @@ public class Main2Activity extends AppCompatActivity {
         final Button button1 = (Button) findViewById(R.id.Ans_button_B);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if(editText.getText().toString().matches(""))
-                {
+                if (editText.getText().toString().matches("")) {
                     Toast toast = Toast.makeText(Main2Activity.this, "欄位不能是空白!!", Toast.LENGTH_LONG);
                     toast.show();
-                }
-                else if(editText.getText().toString().length()<8||editText.getText().toString().length()>8){
+                } else if (editText.getText().toString().length() < 8 || editText.getText().toString().length() > 8) {
                     Toast toast = Toast.makeText(Main2Activity.this, "發票號碼一共8碼", Toast.LENGTH_LONG);
                     toast.show();
-                }
-                else{
-                    String enter =editText.getText().toString();
+                } else {
+                    String enter = editText.getText().toString();
                     Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
-                    intent.putExtra("Month",month);
-                    intent.putExtra("N1",N1);
-                    intent.putExtra("N2",N2);
-                    intent.putExtra("N3",N3);
-                    intent.putExtra("N4",N4);
-                    intent.putExtra("N5",N5);
-                    intent.putExtra("enter",enter);
+                    intent.putExtra("Month", month);
+                    intent.putExtra("N1", N1);
+                    intent.putExtra("N2", N2);
+                    intent.putExtra("N3", N3);
+                    intent.putExtra("N4", N4);
+                    intent.putExtra("N5", N5);
+                    intent.putExtra("enter", enter);
                     startActivity(intent);
                 }
 
